@@ -1,1 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #263238;
+    line-height: 1.6;
+}
+
+
+/* Demo Banner */
+
+.demo-banner {
+    background: #fff3cd;
+    color: #856404;
+    text-align: center;
+    padding: 7px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #ffeeba;
+}
+
+
+/* Header */
+
+.top-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e6ea;
+}
+
+.header-container {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.brand-logo {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #263238;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.brand h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.brand p {
+    color: #777;
+    font-size: 13px;
+}
+
+.student-reg {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.student-reg strong {
+    font-size: 15px;
+}
+
+.student-reg span {
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* Main */
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+
+    margin: 30px auto;
+}
+
+
+/* Card */
+
+.card {
+    background: white;
+
+    border: 1px solid #e3e7eb;
+    border-radius: 6px;
+
+    margin-bottom: 24px;
+
+    overflow: hidden;
+}
+
+.section-title {
+    padding: 17px 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    border-bottom: 1px solid #e6e9ec;
+
+    background: #fafbfc;
+}
+
+.section-title h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.title-icon {
+    font-size: 17px;
+}
+
+
+/* Student Information */
+
+.student-info {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 20px;
+
+    gap: 18px 30px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item span {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 2px;
+}
+
+.info-item strong {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* Semester */
+
+.semester-header {
+    padding: 18px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e7eaed;
+}
+
+.semester-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.semester-header p {
+    font-size: 13px;
+    color: #777;
+}
+
+.sgpa-box {
+    min-width: 105px;
+
+    text-align: center;
+
+    border: 1px solid #dfe4e8;
+    border-radius: 5px;
+
+    padding: 9px 14px;
+}
+
+.sgpa-box span {
+    display: block;
+
+    color: #777;
+    font-size: 11px;
+}
+
+.sgpa-box strong {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* Tables */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px 14px;
+
+    border-bottom: 1px solid #e8ebee;
+
+    font-size: 13px;
+}
+
+th {
+    background: #f7f8fa;
+
+    font-weight: 600;
+
+    color: #4a4f54;
+
+    white-space: nowrap;
+}
+
+td {
+    color: #333;
+}
+
+.result-table th:first-child,
+.result-table td:first-child {
+    text-align: center;
+    width: 55px;
+}
+
+.result-table th:nth-child(4),
+.result-table td:nth-child(4),
+.result-table th:nth-child(5),
+.result-table td:nth-child(5),
+.result-table th:nth-child(6),
+.result-table td:nth-child(6) {
+    text-align: center;
+}
+
+
+/* Grade */
+
+.grade {
+    display: inline-block;
+
+    min-width: 38px;
+
+    padding: 3px 8px;
+
+    border-radius: 4px;
+
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.grade-d {
+    background: #f3f3f3;
+    color: #444;
+}
+
+.grade-cplus {
+    background: #eef4ff;
+    color: #315b9b;
+}
+
+.grade-c {
+    background: #f8f2e9;
+    color: #805f25;
+}
+
+
+/* Table Footer */
+
+tfoot td {
+    background: #fafbfc;
+
+    border-bottom: none;
+
+    font-size: 13px;
+}
+
+
+/* Notice */
+
+.notice {
+    background: #fffdf4;
+
+    border: 1px solid #eee1ad;
+
+    border-radius: 6px;
+
+    padding: 15px 18px;
+
+    margin-bottom: 24px;
+
+    color: #655c39;
+
+    font-size: 13px;
+}
+
+.notice button {
+    margin-left: 10px;
+
+    border: 1px solid #aaa;
+
+    background: white;
+
+    padding: 7px 12px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+}
+
+.notice button:hover {
+    background: #f5f5f5;
+}
+
+
+/* Grading table */
+
+.grading-table th,
+.grading-table td {
+    text-align: center;
+}
+
+.grading-table td:last-child {
+    text-align: left;
+}
+
+.grading-table tbody tr:hover,
+.result-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.effective {
+    padding: 15px 20px;
+
+    font-size: 12px;
+
+    color: #777;
+
+    border-top: 1px solid #e8ebee;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 25px 15px 35px;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+footer p:first-child {
+    margin-bottom: 3px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .header-container {
+        width: 94%;
+
+        min-height: 80px;
+
+        align-items: flex-start;
+
+        padding: 15px 0;
+
+        flex-direction: column;
+    }
+
+    .student-reg {
+        text-align: left;
+    }
+
+    .brand h1 {
+        font-size: 19px;
+    }
+
+    .container {
+        width: 94%;
+        margin-top: 20px;
+    }
+
+    .student-info {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    .semester-header {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .sgpa-box {
+        min-width: 85px;
+    }
+
+    th,
+    td {
+        padding: 10px 11px;
+        font-size: 12px;
+    }
+
+    .notice button {
+        display: block;
+
+        margin: 10px 0 0;
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 430px) {
+
+    .section-title {
+        padding: 14px 15px;
+    }
+
+    .section-title h2 {
+        font-size: 16px;
+    }
+
+    .student-info {
+        padding: 15px;
+    }
+
+    .semester-header {
+        padding: 15px;
+    }
+
+    .semester-header h3 {
+        font-size: 16px;
+    }
+
+    .sgpa-box strong {
+        font-size: 19px;
+    }
+
+}
