@@ -16,36 +16,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 
-    background: #f4f6f9;
+    background: #ffffff;
 
-    color: #263238;
+    color: #222222;
 
     line-height: 1.6;
-}
-
-
-/* =========================================
-   DEMO BANNER
-========================================= */
-
-.demo-banner {
-    width: 100%;
-
-    padding: 7px 10px;
-
-    text-align: center;
-
-    background: #fff3cd;
-
-    color: #856404;
-
-    border-bottom: 1px solid #ffeeba;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    letter-spacing: 0.5px;
 }
 
 
@@ -94,6 +69,7 @@ body {
 
 .brand-logo {
     width: 48px;
+
     height: 48px;
 
     border-radius: 6px;
@@ -101,20 +77,23 @@ body {
     overflow: hidden;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     background: #263238;
 }
 
+
 .brand-logo img {
     width: 100%;
+
     height: 100%;
 
-    object-fit: cover;
+    object-fit: contain;
 
     display: block;
-
 }
 
 
@@ -133,7 +112,7 @@ body {
 
 
 /* =========================================
-   STUDENT REGISTRATION
+   STUDENT REG
 ========================================= */
 
 .student-reg {
@@ -168,7 +147,7 @@ body {
 
     max-width: 1150px;
 
-    margin: 30px auto;
+    margin: 28px auto;
 }
 
 
@@ -194,28 +173,32 @@ body {
 ========================================= */
 
 .section-title {
-    padding: 17px 20px;
+    padding: 16px 0 13px 0;
 
     display: flex;
 
     align-items: center;
 
-    gap: 10px;
+    gap: 7px;
 
-    background: #fafbfc;
+    background: transparent;
 
-    border-bottom: 1px solid #e6e9ec;
+    border-bottom: none;
 }
 
 
 .section-title h2 {
-    font-size: 18px;
+    font-size: 20px;
 
     font-weight: 600;
+
+    color: #222222;
 }
 
 
 .title-icon {
+    color: #5058d9;
+
     font-size: 17px;
 }
 
@@ -225,36 +208,58 @@ body {
 ========================================= */
 
 .student-info {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 18px 30px;
-
-    padding: 20px;
+    padding: 5px 7px 16px;
 }
 
 
-.info-item {
+/* Student Name */
+
+.student-name {
+    margin-bottom: 8px;
+
+    color: #5058d9;
+
+    font-size: 20px;
+
+    font-weight: 500;
+}
+
+
+/* Information Row */
+
+.info-row {
     display: flex;
 
-    flex-direction: column;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 9px;
+
+    color: #222222;
+
+    font-size: 16px;
+
+    font-weight: 400;
 }
 
 
-.info-item span {
-    color: #777777;
+/* Information Icons */
 
-    font-size: 12px;
+.info-icon {
+    width: 20px;
 
-    margin-bottom: 2px;
-}
+    min-width: 20px;
 
+    display: inline-flex;
 
-.info-item strong {
-    color: #333333;
+    align-items: center;
 
-    font-size: 14px;
+    justify-content: center;
+
+    color: #5058d9;
+
+    font-size: 15px;
 
     font-weight: 600;
 }
@@ -265,15 +270,7 @@ body {
 ========================================= */
 
 .semester-header {
-    padding: 18px 20px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
+    padding: 16px 20px;
 
     border-bottom: 1px solid #e7eaed;
 }
@@ -294,45 +291,6 @@ body {
 
 
 /* =========================================
-   SGPA BOX
-========================================= */
-
-.sgpa-box {
-    min-width: 105px;
-
-    padding: 9px 14px;
-
-    text-align: center;
-
-    border: 1px solid #dfe4e8;
-
-    border-radius: 5px;
-
-    background: #ffffff;
-}
-
-
-.sgpa-box span {
-    display: block;
-
-    color: #777777;
-
-    font-size: 11px;
-}
-
-
-.sgpa-box strong {
-    display: block;
-
-    color: #263238;
-
-    font-size: 22px;
-
-    font-weight: 700;
-}
-
-
-/* =========================================
    TABLE WRAPPER
 ========================================= */
 
@@ -344,7 +302,7 @@ body {
 
 
 /* =========================================
-   GENERAL TABLE
+   TABLE
 ========================================= */
 
 table {
@@ -381,7 +339,7 @@ td {
 
 
 /* =========================================
-   RESULT TABLE ALIGNMENT
+   RESULT TABLE
 ========================================= */
 
 .result-table th:first-child,
@@ -405,7 +363,7 @@ td {
 
 
 /* =========================================
-   GRADE BADGES
+   GRADES
 ========================================= */
 
 .grade {
@@ -425,16 +383,12 @@ td {
 }
 
 
-/* D */
-
 .grade-d {
     background: #f3f3f3;
 
     color: #444444;
 }
 
-
-/* C+ */
 
 .grade-cplus {
     background: #eef4ff;
@@ -443,8 +397,6 @@ td {
 }
 
 
-/* C */
-
 .grade-c {
     background: #f8f2e9;
 
@@ -452,16 +404,12 @@ td {
 }
 
 
-/* A */
-
 .grade-a {
     background: #eef7ee;
 
     color: #28733a;
 }
 
-
-/* A+ */
 
 .grade-aplus {
     background: #eaf7f1;
@@ -546,7 +494,7 @@ tfoot td {
 
 
 /* =========================================
-   UGC GRADING TABLE
+   GRADING TABLE
 ========================================= */
 
 .grading-table th,
@@ -604,7 +552,7 @@ footer p:first-child {
 
 
 /* =========================================
-   TABLET / MOBILE
+   MOBILE
 ========================================= */
 
 @media (max-width: 700px) {
@@ -640,19 +588,24 @@ footer p:first-child {
 
 
     .student-info {
-        grid-template-columns: 1fr;
+        padding: 5px 7px 15px;
+    }
 
-        gap: 14px;
+
+    .student-name {
+        font-size: 20px;
+    }
+
+
+    .info-row {
+        font-size: 15px;
+
+        margin-bottom: 9px;
     }
 
 
     .semester-header {
-        align-items: flex-start;
-    }
-
-
-    .sgpa-box {
-        min-width: 85px;
+        padding: 15px;
     }
 
 
@@ -690,44 +643,32 @@ footer p:first-child {
 @media (max-width: 430px) {
 
     .section-title {
-        padding: 14px 15px;
+        padding: 14px 0 12px;
     }
 
 
     .section-title h2 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
 
-    .student-info {
-        padding: 15px;
-    }
-
-
-    .semester-header {
-        padding: 15px;
-    }
-
-
-    .semester-info h3 {
-        font-size: 16px;
-    }
-
-
-    .sgpa-box strong {
+    .student-name {
         font-size: 19px;
     }
 
 
-    .sgpa-box {
-        min-width: 75px;
-
-        padding: 7px 10px;
+    .info-row {
+        font-size: 14px;
     }
 
 
-    .demo-banner {
-        font-size: 10px;
+    .effective {
+        font-size: 11px;
+    }
+
+
+    footer {
+        font-size: 11px;
     }
 
 }
